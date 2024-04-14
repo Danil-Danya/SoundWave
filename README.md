@@ -89,8 +89,6 @@ app.listen(PORT, () => console.log(`server has been started in http://localhost:
 
 ## Структура проекта Backend ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 
-Вот исправленный текст с учетом грамматических ошибок:
-
 Весь бекенд находится в папке server и взаимодействует с корневым файлом index.js. Папка server разделена на несколько папок: controllers, database, middlewares, router, static.
 
 В начале в папке database делится база данных на два типа: серверную и реляционную. В серверной БД (Mongo) хранятся данные чатов и сообщения, в реляционной (SQL) хранятся данные пользователей, пароли, пути к файлам и т. д.

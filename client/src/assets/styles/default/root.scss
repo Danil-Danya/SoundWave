@@ -16,13 +16,8 @@ li{
     list-style: none;
 }
 
-.line{
-    position: absolute;
-    left: 0;
-    z-index: -1;
+.header {
+    background: url('../../images/statics/backgound/Rectangle\ 254.png');
     width: 100%;
-    top: 15%;
-    left: 0%;
+    height: 100vh;
 }
-
-
