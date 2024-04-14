@@ -18,6 +18,14 @@ const router = createRouter({
       meta: {
         layout: 'user-layout'
       }
+    },
+    {
+      path: '/site/download/:lang',
+      name: 'download',
+      component: () => import('../views/SiteDownload.vue'),
+      meta: {
+        layout: 'landing'
+      }
     }
   ]
 })
