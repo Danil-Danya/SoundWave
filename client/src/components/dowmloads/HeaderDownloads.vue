@@ -10,6 +10,9 @@
                     <img src="@/assets/images/statics/landing/header/headphones.png" alt="Headphones" class="header__image">
                 </div>
             </div>
+            <div class="line-container">
+                <img class="line" src="@/assets/images/statics/lines/path1.svg" alt="">
+            </div>
             <div class="header__bg background-gredient"></div>
         </div>
     </header>

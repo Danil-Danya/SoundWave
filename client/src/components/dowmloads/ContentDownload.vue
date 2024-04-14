@@ -13,6 +13,9 @@
                     >
                 </div>
             </div>
+            <div class="line-container">
+                <img class="download__content-line line" src="@/assets/images/statics/lines/path2.svg" alt="">
+            </div>
             <div class="download__content-bg background-gredient"></div>
         </div>
     </div>
