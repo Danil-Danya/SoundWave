@@ -34,7 +34,7 @@ export default {
   data: () => ({
     links: [
       {
-        name:'Кампания',
+        name:'Компания',
         links:[
           {
             path:'/site/autors',
