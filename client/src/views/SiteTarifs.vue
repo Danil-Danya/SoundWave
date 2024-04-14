@@ -2,13 +2,15 @@
     <section class="tarifs">
         <HeaderTarifs />
         <main class="main">
-            <HeaderTarifs />
+            <ContentTarifs />
             <TableTarifs />
         </main>
     </section>
 </template>
 
 <style lang="scss">
+@import "@/assets/styles/layout/landing/header.scss";
+
 @import "@/assets/styles/tarifs/headerTarifs.scss";
 @import "@/assets/styles/tarifs/contentTarifs.scss";
 @import "@/assets/styles/tarifs/tableTarifs.scss";

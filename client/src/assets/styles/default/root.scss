@@ -15,3 +15,14 @@ a{
 li{
     list-style: none;
 }
+
+.line{
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    top: 15%;
+    left: 0%;
+}
+
+

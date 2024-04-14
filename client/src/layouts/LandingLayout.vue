@@ -2,9 +2,7 @@
   <section class="site">
     <div class="container">
       <Navbar />
-      <main class="main">
-        <router-view />
-      </main>
+      <router-view />
       <Footer />
     </div>
     <div class="site-bg"></div>
