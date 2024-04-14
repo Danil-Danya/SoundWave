@@ -1,5 +1,5 @@
 import { Sequelize, DataTypes, Model } from '@sequelize/core';
-import { Attribute, PrimaryKey, AutoIncrement, NotNull } from '@sequelize/core/decorators/legacy';
+import { Attribute, PrimaryKey, AutoIncrement, NotNull } from '@sequelize/core/decorators-legacy';
 
 import modelSync from '../../../middlewares/databaseMiddleware/modelSync';
 

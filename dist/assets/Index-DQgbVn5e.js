@@ -1,1 +1,0 @@
-import{_ as t,c as o,a as n,w as s,b as a,r,o as c,d as _}from"./index-D-sRmK2v.js";const l={},d=a("h1",null,"Hello Sound Wave!",-1);function u(i,f){const e=r("router-link");return c(),o("div",null,[d,n(e,{to:"test"},{default:s(()=>[_("Go test")]),_:1})])}const p=t(l,[["render",u]]);export{p as default};

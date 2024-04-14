@@ -2,9 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: $White;
+    color: white;
 }
 
 body {
-    background: #242424;
+    background: $black;
+}
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
 }
