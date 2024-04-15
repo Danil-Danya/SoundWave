@@ -1,0 +1,11 @@
+.background-gredient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  opacity: 0.08;
+  background: var(--bg, conic-gradient(from 220deg at 50% 50%, rgba(198, 37, 93, 0.552) 155deg, rgb(204, 0, 255) 172deg, rgba(229, 41, 151, 0.941) 202deg, rgba(24, 69, 124, 0.95) 270deg, rgba(6, 95, 203, 0.307) 360deg));
+  filter: blur(100px);
+}

@@ -9,14 +9,23 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@sequelize/core": "^7.0.0-alpha.37",
     "axios": "^1.6.8",
+    "gsap": "^3.12.5",
+    "vite-plugin-require": "^1.1.14",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0",
     "vuex": "^4.0.2"
   },
   "devDependencies": {
+    "@babel/cli": "^7.24.1",
+    "@babel/core": "^7.24.4",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/plugin-proposal-decorators": "^7.24.1",
+    "@babel/preset-env": "^7.24.4",
+    "@types/sequelize": "^4.28.20",
     "@vitejs/plugin-vue": "^5.0.4",
     "sass": "^1.74.1",
-    "vite": "^5.1.6"
+    "vite": "^5.2.8"
   }
 }

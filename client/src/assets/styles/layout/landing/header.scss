@@ -1,0 +1,40 @@
+.header {
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    &__title {
+        color: $white;
+        font-size: 96px;
+        font-family: $mb;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__text {
+        color: $white;
+        font-size: 40px;
+        font-family: $msb;
+    }
+
+    &__image {
+        animation: image linear 2s infinite;
+    }
+}
+
+@keyframes image {
+    0% {
+        transform: translateY(30px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(30px);
+    }
+    
+}

@@ -1,0 +1,63 @@
+.landing__navbar{
+  &-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &-logo{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  &-logolink{
+    display: inline-block;
+    display: flex;
+    align-items: center;
+  }
+  &-img{
+    width: 60px;
+    height: 60px;
+  }
+
+  &-logotext{
+    font-family: $msb;
+    display: flex;
+    margin-left: 20px;
+  }
+
+  &-navigation{
+    justify-content: space-between;
+    padding-top: 30px;
+    font-family: $msb;
+  }
+  &-ul{
+    display: inline-block;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+  }
+  &-link{
+    display: inline-block;
+    &::after{
+      content: '';
+      display: block;
+      height: 1px;
+      width: 0;
+      background: $white;
+      transition: 300ms;
+    }
+    &:hover::after{
+      width: 100%;
+    }
+  }
+  &-vline{
+    display: inline-block;
+    width: 3px;
+    height: 40px;
+    margin: 0 20px;
+    background: $white;
+  }
+}
+
