@@ -1,0 +1,22 @@
+.header {
+    height: calc(60vh - 20px);
+
+    &__title {
+        @include media ($large) {
+            font-size: 40px;
+        }
+    }
+
+    &__text {
+        margin-top: 40px;
+
+        font-family: $msb;
+        font-size: 40px;
+
+        width: 800px;
+
+        @include media ($large) {
+            font-size: 20px;
+        }
+    }
+}
