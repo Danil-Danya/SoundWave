@@ -11,15 +11,15 @@
 <style lang="scss">
 @import "@/assets/styles/layout/landing/header.scss";
 
-@import "@/assets/styles/tarifs/headerTarifs.scss";
-@import "@/assets/styles/tarifs/contentTarifs.scss";
-@import "@/assets/styles/tarifs/tableTarifs.scss";
+@import "@/assets/styles/pages/landing-tarifs/headerTarifs.scss";
+@import "@/assets/styles/pages/landing-tarifs/contentTarifs.scss";
+@import "@/assets/styles/pages/landing-tarifs/tableTarifs.scss";
 </style>
 
 <script>
-import ContentTarifs from "../components/Tarifs/ContentTarifs.vue";
-import HeaderTarifs from "../components/Tarifs/HeaderTarifs.vue";
-import TableTarifs from "../components/Tarifs/TableTarifs.vue";
+import ContentTarifs from "../components/tarifs/ContentTarifs.vue";
+import HeaderTarifs from "../components/tarifs/HeaderTarifs.vue";
+import TableTarifs from "../components/tarifs/TableTarifs.vue";
 
 export default {
     components:{

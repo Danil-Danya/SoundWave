@@ -43,7 +43,7 @@ export default {
           text:'Справка'
         },
         {
-          path:'/plans',
+          path:'/site/plans/ru',
           text:'Тарифы'
         },
       ],

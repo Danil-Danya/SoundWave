@@ -2,8 +2,8 @@
     <div class="download__content">
         <div class="download__content-container">
             <h2 class="download__content-title">Скачивайте музыку на любое ваше устройство</h2>
-            <div class="download__content-content">
-                <div class="download__content-item" v-for="item in items" :key="item">
+            <div class="download__content-content" ref="trigger">
+                <div class="download__content-item" v-for="item in items" :key="item" ref="items">
                     <h3 class="download__content-item-title">{{item.title}}</h3>
                     <router-link to="" class="download__content-link">Скачать</router-link>
                     <img :src="item.image" alt="Sysytem" 
@@ -22,6 +22,7 @@
 </template>
 
 <script>
+import { animationLanding } from '@/scripts/greensock.js';
 
 export default {
     data: () => ({
@@ -49,7 +50,29 @@ export default {
                 image: require('@/assets/images/statics/landing/mac.png')
             },
         ]
-    })
+    }),
+
+    methods: {
+        animate () {
+            const items = this.$refs.items;
+            const trigger = this.$refs.trigger;
+
+            const itemClass = items[0].className;
+
+            console.log(itemClass);
+            animationLanding.animateDownloadItem(`.${itemClass}`, trigger);
+        }
+    },
+
+    mounted () {
+        this.$nextTick(() => {
+            this.animate()
+        })
+    },
+
+    activated() {
+        this.animate();
+    }
 }
 
 </script>

@@ -1,0 +1,28 @@
+.tarifs__content {
+    margin-bottom: 100px;
+    margin-top: 50px;
+    &-title {
+        
+        font-size: 50px;
+        font-family: $msb;
+    }
+
+    &-text {
+        margin-top: 50px;
+        font-family: $mm;
+        font-size: 20px;
+
+        width: 800px;
+    }
+
+    &-button {
+        display: inline-block;
+        margin-top:50px;
+        background: $white;
+        color: $black;
+        font-family: $msb;
+        font-size: 20px;
+        padding: 16px 30px;
+        border-radius: 30px;
+    }
+}

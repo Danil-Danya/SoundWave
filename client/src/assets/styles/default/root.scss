@@ -5,6 +5,16 @@
     color: white;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+    height: 60px;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 50px;
+    background: $purple;
+}
+
 body {
     background: $black;
 }

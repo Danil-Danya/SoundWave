@@ -28,7 +28,7 @@ const router = createRouter({
       }
     },
     {
-      path: '/site/tarifs/:lang',
+      path: '/site/plans/:lang',
       name: 'tarifs',
       component: () => import('../views/SiteTarifs.vue'),
       meta: {
