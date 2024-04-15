@@ -45,8 +45,8 @@ class AnimationLanding {
             stagger: 1,
             scrollTrigger: {
                 trigger: trigger,
-                start: 'top 0',
-                end: 'bottom 0',
+                start: 'top 80%',
+                end: 'bottom 80%',
                 scrub: 4,
             }
         });
