@@ -6,6 +6,9 @@
             <div class="login__image-container">
                 <img class="login__image" src="@/assets/images/statics/login/logo.svg" alt="logo">
             </div>
+            <div class="login__line-container">
+                <img class="line" src="" alt="">
+            </div>
           <router-view />
         </div>
       </div>
