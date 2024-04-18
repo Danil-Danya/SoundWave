@@ -34,3 +34,31 @@ li{
     z-index: -1;
 }
 
+.login{
+    &__layout{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
+    &__container{
+        margin: 10% auto;
+
+        max-width: 500px;
+        width: 100%;
+        height: 650px;
+
+        background: $loginBg;
+        border-radius: 40px;
+    }
+
+    &__image{
+        position: absolute;
+        top: calc(-65px / 2);
+        left: calc(50% - (65px / 2));
+        &-container{
+           position: relative;
+        }
+    }
+}
+
