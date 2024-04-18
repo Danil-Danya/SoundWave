@@ -1,0 +1,94 @@
+.login {
+    &__content {
+        padding: 70px;
+    }
+
+    &__title {
+        font-family: $msb;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    &__image {
+        position: relative;
+        &-src {
+            position: absolute;
+            
+        }
+    }
+
+    .input-group {
+        font-family: $mr;
+        font-size: 15px;
+
+        &__item {
+            margin: 15px 0;
+        }
+
+        &__save {
+            display: flex;
+        
+        }
+
+       
+        label {
+            display: block;
+            margin-bottom: 5px;
+            
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            border-radius: 5px;
+            border: 1px solid $white;
+            padding: 8px 0;
+            width: 100%;
+            background-color: transparent;
+        }
+
+    }
+
+
+
+    .input-toggle {
+        height: 0;
+        width: 0;
+        visibility: hidden;
+
+        &+.input-toggle__label {
+            cursor: pointer;
+            text-indent: -9999px;
+            width: 35px;
+            height: 20px;
+            background: grey;
+            display: block;
+            border-radius: 100px;
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 2px;
+                left: 2px;
+                width: 15px;
+                height: 15px;
+                background: #fff;
+                border-radius: 20px;
+                transition: 0.3s;
+            }
+        }
+
+        &:checked+.input-toggle__label {
+            background: $purple;
+
+            &:after {
+                left: calc(100% - 2px);
+                transform: translateX(-100%);
+            }
+        }
+
+        .input-toggle__label:active:after {
+            width: 130px;
+        }
+    }
+}
