@@ -42,6 +42,11 @@ li{
     }
 
     &__container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;   
+
         margin: 10% auto;
 
         max-width: 500px;
@@ -54,7 +59,7 @@ li{
 
     &__image{
         position: absolute;
-        top: calc(-65px / 2);
+        top: calc(-200px / 2);
         left: calc(50% - (65px / 2));
         &-container{
            position: relative;

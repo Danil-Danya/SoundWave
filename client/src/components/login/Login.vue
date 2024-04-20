@@ -4,51 +4,69 @@
       <div class="login__header">
         <h1 class="login__title">Войти в SoundWave</h1>
       </div>
-      <div class="login__image">
+      <div class="login__images">
         <img
           src="@/assets/images/statics/lines/path3.svg"
           alt=""
-          class="login__image-src"
+          class="login__images-src"
         />
       </div>
-      <div class="input-group">
-        <div class="input-group__item input-mail">
-          <label for="email" class="input-mail__label"
+      <div class="input__group">
+        <div class="input__group-item">
+          <label for="email" class="input__group-email"
             >Электронная почта или имя пользователя</label
           >
           <input
             type="text"
             id="email"
-            placeholder="Электронная почта или имя пользователя"
             v-model="email"
-            class="input-field input-mail__input"
+            class="input__group-input"
           />
         </div>
-        <div class="input-group__item input-password">
-          <label for="password" class="input-password__label">Пароль</label>
+        <div class="input__group-item">
+          <label for="password" class="input__group-password">Пароль</label>
           <input
             type="password"
             id="password"
-            placeholder="Пароль"
             v-model="password"
-            class="input-field input-password__input"
+            class="input__group-input"
           />
         </div>
-
-        <div class="input-group__save">
-          <input type="checkbox" id="switch" class="input-toggle" /><label
-            for="switch"
-            class="input-toggle__label"
-            >Toggle</label
-          >
+        <div class="slider-box">
+          <label class="switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+          </label>
           <p>Запомнить меня</p>
+        </div>
+
+        <div class="login__botton">
+          <button class="login__botton-btn" @click="login">Войти</button>
+        </div>
+
+        <div class="login__forgot-password">
+          <a class="forgot" href="#" @click.prevent="forgotPassword"
+            >Забыли пароль?</a
+          >
+        </div>
+
+        <hr class="login__line" />
+
+        <div class="login__register">
+          <p class="login__register-link">
+            Нет аккаунта? <span class="login__register-reg"><a href="#">Регистрация в SoundWave</a></span>
+          </p>
+          <p class="login__register-disclaimer">
+            Нажимая кнопку “Войти”, вы даете подтверждение о соблюдении
+            <i><a href="">Политики и Конфиденциальности</a></i> <span class="login__register-dis" >SoundWave</span> 
+          </p>
         </div>
       </div>
     </div>
   </div>
 </template>
   
-  <style lang="scss">
+<style lang="scss">
 @import "@/assets/styles/pages/login/login.scss";
 </style>
 
