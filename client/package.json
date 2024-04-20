@@ -4,15 +4,17 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "@sequelize/core": "^7.0.0-alpha.37",
     "axios": "^1.6.8",
+    "gsap": "^3.12.5",
     "vite-plugin-require": "^1.1.14",
     "vue": "^3.4.21",
+    "vue-i18n": "^9.13.0",
     "vue-router": "^4.3.0",
     "vuex": "^4.0.2"
   },

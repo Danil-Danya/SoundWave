@@ -5,12 +5,16 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: () => import('../views/Index.vue'),
-      meta: {
-        layout: 'user-layout'
-      }
+      redirect: '/site/download/ru'
     },
+    {
+      path: '/:pathName(.*)*',
+      name: '404',
+      component: () => import('../views/NotFound.vue'),
+      meta: {
+        layout: 'notfound'
+      }
+    }, 
     {
       path: '/test',
       name: 'test',
@@ -26,7 +30,23 @@ const router = createRouter({
       meta: {
         layout: 'landing'
       }
-    }
+    },
+    {
+      path: '/site/plans/:lang',
+      name: 'tarifs',
+      component: () => import('../views/SiteTarifs.vue'),
+      meta: {
+        layout: 'landing'
+      }
+    },
+    {
+      path: '/site/help/:lang',
+      name: 'help',
+      component: () => import('../views/SiteHelp.vue'),
+      meta: {
+        layout: 'landing'
+      }
+    },
   ]
 })
 

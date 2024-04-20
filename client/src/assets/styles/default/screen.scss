@@ -4,6 +4,7 @@ $lg: 1140px;
 $md: 992px;
 $sm: 768px;
 $xs: 576px;
+$mini: 490px;
 $gutters: 30px;
 $gutters-side: calc($gutters / 2);
 $column: 12;
@@ -54,6 +55,10 @@ $column: 12;
 
     @include media($sm) {
         max-width: $xs;
+    }
+
+    @include media($xs) {
+        max-width: $mini;
     }
 
     @include media($xs) {

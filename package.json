@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
+    "@capacitor/core": "^6.0.0",
     "@sequelize/core": "^7.0.0-alpha.37",
     "babel": "^6.23.0",
     "bcrypt": "^5.1.1",
