@@ -1,12 +1,12 @@
 <template>
   <div class="tarifs__content" ref="trigger">
     <h2 class="tarifs__content-title">
-      {{ $t('Site.Tarifs.ContentTitle') }}
+      Слушайте свою любимую музыку без ограничений с нашими тарифными планами
     </h2>
     <p class="tarifs__content-text" v-for="text in items" :key="text" ref="items">
       {{ text }}
     </p>
-    <router-link class="tarifs__content-button" to="">{{ $t('Site.Tarifs.ContentButton') }}</router-link>
+    <router-link class="tarifs__content-button" to="">Получить премиум</router-link>
   </div>
 </template>
 
@@ -16,17 +16,15 @@ import { animationLanding } from '@/scripts/greensock.js';
 export default {
     data() {
         return {
-            items: [],
+            items: [
+              "Подписывайтесь на наш премиум-план и получайте доступ к огромной библиотеке треков, альбомов и плейлистов в высоком качестве без рекламы. Наслаждайтесь музыкой без прерываний, где бы вы ни находились.",
+              "Чем больше вы слушаете, тем больше преимуществ вы получаете! Наши тарифы предлагают не только неограниченный доступ к музыке, но и эксклюзивные возможности, такие как оффлайн-режим, персонализированные рекомендации и возможность создания собственных плейлистов.",
+              "Выберите свой идеальный тариф и наслаждайтесь музыкой в любое время и в любом месте! Переходите на премиум и откройте для себя новые музыкальные горизонты прямо сейчас!",
+            ],
         };
     },
 
     methods: {
-        getLocalList () {
-            const messages = this.$i18n.messages;
-            const localMessages = messages[this.$route.params.lang];
-
-            this.items = localMessages.Site.Tarifs.ContentText;
-        },
         animate () {
             const items = this.$refs.items;
             const trigger = this.$refs.trigger;
@@ -37,20 +35,9 @@ export default {
         }
     },
 
-    watch: {
-        '$route.params.lang': {
-            deep: true,
-            handler () {
-                this.getLocalList();
-            }
-        }
-    },
-
     mounted () {
-      this.getLocalList();
-      
         this.$nextTick(() => {
-          this.animate();
+            this.animate()
         })
     },
 
