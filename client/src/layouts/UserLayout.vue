@@ -1,6 +1,0 @@
-<template>
-    <section>
-        
-    </section>
-</template>
-

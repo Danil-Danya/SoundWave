@@ -1,5 +1,0 @@
-# Ignore .env file in the root directory
-.env
-
-# Ignore config.json file in ./server/database/sql/congig/ directory
-/server/database/sql/config/config.json
