@@ -1,25 +1,44 @@
-import { Sequelize, DataTypes, Model } from '@sequelize/core';
-import { Attribute, PrimaryKey, AutoIncrement, NotNull } from '@sequelize/core/decorators-legacy';
+import { Sequelize, DataTypes } from 'sequelize';
+import sequelize from '../config/dbConfig.js';
 
-import modelSync from '../../../middlewares/databaseMiddleware/modelSync';
 
-const sequelize = new Sequelize('sqlite::memory:');
+const User = sequelize.define('User', {
+    id: {
+        type: DataTypes.INTEGER,
+        autoIncrement: true,
+        primaryKey: true,
+        allowNull: false,
+        unique: true
+    },
 
-export default class User extends Model {
-    @Attribute(DataTypes.INTEGER)
-    @PrimaryKey
-    @AutoIncrement
-    id;
+    email: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        unique: true
+    },
 
-    @Attribute(DataTypes.STRING)
-    @NotNull
-    email;
+    username: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        unique: true
+    },
 
-    @Attribute(DataTypes.STRING)
-    username;
+    password: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
 
-    @Attribute(DataTypes.STRING)
-    password;
-}
+    avatar: {
+        type: DataTypes.STRING,
+        allowNull: true,
+    },
 
-modelSync(User);
+    // preferences: {
+    //     type: DataTypes.STRING,
+    //     allowNull: true
+    // },
+})
+
+User.sync();
+
+export default User;
