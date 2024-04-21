@@ -1,0 +1,97 @@
+.help {
+    &__container {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item {
+        transition: all 0.5s;
+        min-height: 150px;
+        max-width: 1080px;
+        background: rgba(44, 44, 45, 0.60);
+        margin-bottom: 40px;
+        padding: 60px 120px;
+        display: flex;
+        gap: 34px;
+        border-radius: 15px;
+        overflow: hidden; 
+
+        @include media ($md) {
+            padding: 30px 60px;
+        }
+
+        @include media ($xs) {
+            padding: 15px 30px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        &:first-of-type {
+            margin-top: 100px;
+        }
+    }
+
+    &__icon {
+        transition: all 0.3s;
+        cursor: pointer;
+        padding: 15px;
+        background: $purple;
+        border-radius: 100%;
+        width: 60px;
+
+        @include media ($md) {
+            padding: 5px;
+            width: 30px;
+        }
+
+        &:hover {
+            background: $lightPurple;
+        }
+    }
+
+    &__title {
+        font-size: 36px;
+        color: $purple;
+        font-family: $mb;
+        margin-bottom: 35px;
+
+        @include media ($md) {
+             font-size: 24px;
+        }
+
+        @include media ($xs) {
+            font-size: 20px;
+        }
+    }
+    
+    &__text {
+        transition: height 0.5s ease;
+        overflow: hidden;
+        font-family: $mm;
+        font-size: 20px;
+        line-height: 30px;
+        align-items: center;
+        height: 100px;
+
+        @include media ($md) {
+            font-size: 16px;
+            line-height: 25px;
+        }
+
+        @include media ($xs) {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
+
+.help-enter-active,
+.help-leave-active {
+    transition: all 0.5s ease;
+}
+
+.help-enter-from,
+.help-leave-to {
+    height: 0;
+    opacity: 0;
+}

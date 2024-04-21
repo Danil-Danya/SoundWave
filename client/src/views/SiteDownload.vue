@@ -19,6 +19,10 @@ export default {
     components: {
         HeaderDownload,
         ContentDownload
+    },
+
+    mounted () {
+        document.title = 'Download - SoundWave';
     }
 }
 </script>

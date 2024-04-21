@@ -1,9 +1,13 @@
 .table__content {
     &-title {
-        margin-top: -20px;
+        //margin-top: -20px;
 
         font-family: $msb;
         font-size: 50px;
+
+        @include media ($md) {
+            font-size: 30px;
+        }
     }
 
     &-table {
@@ -21,6 +25,7 @@
     &-row {
         display: flex;
         border-bottom: 1px solid #ccc;
+        align-items: center;
 
         &:last-of-type {
             border: none;
@@ -33,11 +38,25 @@
     }
 
     &-cell {
-        flex: 1;
-        padding: 10px;
+        //flex: 1;
+        //padding: 10px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
+        max-width: 500px;
+        width: 100%;
         border-right: 1px solid #ccc;
         font-size: 18px;
+
+        @include media ($md) {
+            font-size: 12px;
+
+            &:nth-of-type(2) {
+                display: none;
+            }
+        }
 
         &:last-of-type {
             border: none;

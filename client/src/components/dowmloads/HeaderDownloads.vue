@@ -3,7 +3,7 @@
         <div class="header__container">
             <div class="header__left">
                 <h1 class="header__title" ref="title">SoundWave</h1>
-                <p class="header__text" ref="text">Слушайте музыку бесплатносо своими любимыми авторами</p>
+                <p class="header__text" ref="text">{{ $t('Site.Download.HeaderText') }}</p>
             </div>
             <div class="header__right">
                 <div class="header__image-container" ref="image">
@@ -11,7 +11,7 @@
                 </div>
             </div>
             <div class="line-container">
-                <img class="line" src="@/assets/images/statics/lines/path1.svg" alt="">
+                <img class="line" src="@/assets/images/statics/lines/path1.svg" alt="Line">
             </div>
             <div class="header__bg background-gredient"></div>
         </div>

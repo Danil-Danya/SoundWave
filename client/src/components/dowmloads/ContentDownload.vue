@@ -1,15 +1,15 @@
 <template>
     <div class="download__content">
         <div class="download__content-container">
-            <h2 class="download__content-title">Скачивайте музыку на любое ваше устройство</h2>
+            <h2 class="download__content-title">{{ $t('Site.Download.ContentTitle') }}</h2>
             <div class="download__content-content" ref="trigger">
                 <div class="download__content-item" v-for="item in items" :key="item" ref="items">
-                    <h3 class="download__content-item-title">{{item.title}}</h3>
-                    <router-link to="" class="download__content-link">Скачать</router-link>
+                    <h3 class="download__content-item-title">{{ item.title }}</h3>
+                    <router-link to="" class="download__content-link">{{ $t('Site.Download.ContentLink') }}</router-link>
                     <img :src="item.image" alt="Sysytem" 
                      :class="item.type === 'mobile' ?
                      'download__content-img-mobile' : ''" 
-                     class="download__content-img"
+                      class="download__content-img"
                     >
                 </div>
             </div>

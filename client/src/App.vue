@@ -1,7 +1,7 @@
 <template>
   <section :class="layout">
     <component :is="layout">
-      <router-view/>
+      <Router-view/>
     </component>
   </section>
 </template>
@@ -13,6 +13,7 @@
   import ArtistLayout from './layouts/ArtistLayout.vue';
   import UserLayout from './layouts/UserLayout.vue';
   import LandingLayout from './layouts/LandingLayout.vue';
+  import NotfoundLayout from './layouts/NotFoundLayout.vue';
   
 
   export default {
@@ -22,7 +23,8 @@
       ModeratorLayout,
       ArtistLayout,
       UserLayout,
-      LandingLayout
+      LandingLayout,
+      NotfoundLayout
     },
     computed: {
       layout () {

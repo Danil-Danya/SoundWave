@@ -1,16 +1,20 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: () => import('../views/Index.vue'),
-      meta: {
-        layout: 'user-layout'
-      }
+      redirect: '/site/download/ru'
     },
+    {
+      path: '/:pathName(.*)*',
+      name: '404',
+      component: () => import('../views/NotFound.vue'),
+      meta: {
+        layout: 'notfound'
+      }
+    }, 
     {
       path: '/test',
       name: 'test',
@@ -36,22 +40,14 @@ const router = createRouter({
       }
     },
     {
-      path: '/login/:lang',
-      name: 'login',
-      component: () => import('../views/Login.vue'),
+      path: '/site/help/:lang',
+      name: 'help',
+      component: () => import('../views/SiteHelp.vue'),
       meta: {
-        layout: 'login'
+        layout: 'landing'
       }
     },
-    {
-      path: '/registration/:lang',
-      name: 'registration',
-      component: () => import('../views/Registration.vue'),
-      meta: {
-        layout: 'login'
-      }
-    }
   ]
-});
+})
 
 export default router;
