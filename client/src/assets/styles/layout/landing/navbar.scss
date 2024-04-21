@@ -1,0 +1,140 @@
+.landing__navbar{
+  &-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &-logo{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  &-logolink{
+    display: inline-block;
+    display: flex;
+    align-items: center;
+  }
+  &-img{
+    width: 60px;
+    height: 60px;
+  }
+
+  &-logotext{
+    font-family: $msb;
+    display: flex;
+    margin-left: 20px;
+  }
+
+  &-navigation{
+    justify-content: space-between;
+    padding-top: 30px;
+    font-family: $msb;
+    position: relative;
+
+    @include media ($md) {
+      display: none;
+    }
+  }
+  &-button {
+    width: 50px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &-line {
+      display: block;
+      background: $white;
+      width: 30px;
+      height: 3px;
+      border: 5px;
+      transition: 500ms;
+    }
+  }
+  &-mobile {
+    display: none;
+
+    &-ul {
+      padding: 40px;
+    }
+
+    &-container {
+      position: absolute;
+      height: 100vh;
+      top: 70px;
+      right: 0;
+      background: #090109fb;
+      width: 80%;
+      z-index: 2;
+    }
+    
+    @include media ($md) {
+      display: flex;
+    }
+
+    &-container {
+      display: flex;
+    }
+  }
+  &-ul{
+    display: inline-block;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+  }
+  &-link{
+    display: inline-block;
+    @include media ($md) {
+      font-size: 30px;
+      font-family: $msb;
+      padding: 30px;
+    }
+
+    @include media ($xs) {
+      font-size: 25px;
+      font-family: $msb;
+      padding: 25px;
+    }
+
+    @include media ($mini) {
+      font-size: 20px;
+      font-family: $msb;
+      padding: 20px;
+    }
+
+    &::after{
+      content: '';
+      display: block;
+      height: 1px;
+      width: 0;
+      background: $white;
+      transition: 300ms;
+    }
+    &:hover::after{
+      width: 100%;
+    }
+  }
+  &-vline{
+    display: inline-block;
+    width: 3px;
+    height: 40px;
+    margin: 0 20px;
+    background: $white;
+  }
+}
+
+
+.lendingNavbar-enter-active,
+.lendingNavbar-leave-active {
+  transition: all 0.5s ease;
+}
+
+.lendingNavbar-enter-from,
+.lendingNavbar-leave-to {
+  opacity: 0;
+  transform: translateX(100%);
+ //transform: translateX(0);
+}
