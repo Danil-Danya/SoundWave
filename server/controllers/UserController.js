@@ -21,6 +21,37 @@ class Users {
             return res.status(501).json({ messge: 'Server has been down' });
         }
     }
+
+    async initializationUser (req, res) {
+        try {
+
+        }
+        catch {
+
+        }
+    }
+
+    async authorizationUser (req, res) {
+        try {
+
+        }
+        catch {
+
+        }
+    }
+
+    editUserProfile (req, res) {
+        try {
+
+        }
+        catch {
+
+        }
+    }
+
+    deleteUser (req, res) {
+
+    }
 }
 
 export default new Users();
