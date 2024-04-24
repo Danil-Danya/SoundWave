@@ -1,6 +1,10 @@
 .login {
     &__content {
         padding: 0 80px;
+
+        @include media($mini) {
+            max-width: 100%;
+        }
     }
 
     &__title {
