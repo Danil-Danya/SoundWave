@@ -54,11 +54,15 @@
 
         <div class="login__register">
           <p class="login__register-link">
-            Нет аккаунта? <span class="login__register-reg"><a href="#">Регистрация в SoundWave</a></span>
+            Нет аккаунта?
+            <span class="login__register-reg"
+              ><a href="#">Регистрация в SoundWave</a></span
+            >
           </p>
           <p class="login__register-disclaimer">
             Нажимая кнопку “Войти”, вы даете подтверждение о соблюдении
-            <i><a href="">Политики и Конфиденциальности</a></i> <span class="login__register-dis" >SoundWave</span> 
+            <i><a href="">Политики и Конфиденциальности</a></i>
+            <span class="login__register-dis">SoundWave</span>
           </p>
         </div>
       </div>
