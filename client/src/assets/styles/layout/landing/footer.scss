@@ -1,0 +1,62 @@
+.landing__footer{
+  padding: 50px 0;
+  
+  &-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  &-column{
+    font-family: $msb;
+    font-size: 24px;
+
+    @include media ($xs) {
+      margin-top: 20px;
+    }
+  }
+  &-item{
+    padding-top: 15px;
+    font-family: $mm;
+    font-size: 16px;
+    &::after{
+      content: '';
+      display: block;
+      height: 1px;
+      width: 0;
+      background: $white;
+      transition: 300ms;
+    }
+    &:hover::after{
+      width: 100%;
+    }
+  }
+  &-media{
+    padding-top: 5px;
+
+    @include media ($md) {
+      margin-top: 20px;
+    }
+  }
+
+  &-img{
+    width: 50px;
+    height: 50px;
+    margin-right: 40px;
+  }
+  &-license{
+    padding-top: 20px;
+    font-size: 11px;
+    font-family: $mm;
+    width: 300px;
+  }
+  &-line{
+    height: 1px;
+    width: 100%;
+    background: $white;
+    margin-top: 10px;
+    display: block;
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "Site": {
+    "Navbar": {
+      "LogoText": "SoundWave",
+      "NavbarLanding": [
+        {
+          "path": "/site/download",
+          "text": "Download"
+        },
+        {
+          "path": "/site/help",
+          "text": "Help"
+        },
+        {
+          "path": "/site/plans",
+          "text": "Rates"
+        }
+      ],
+      "LinksAuth": [
+        {
+          "path": "/signup",
+          "text": "Sign Up"
+        },
+        {
+          "path": "/signin",
+          "text": "Sign In"
+        }
+      ]
+    },
+    "Footer": {
+      "FooterLicense": "License is assigned to SoundWave, incorporated in 2024.",
+      "FooterLinks": [
+        {
+          "name": "Company",
+          "links": [
+            {
+              "path": "/site/autors",
+              "text": "Authors"
+            },
+            {
+              "path": "/site/services",
+              "text": "Help"
+            },
+            {
+              "path": "/site/policy",
+              "text": "Agreement"
+            }
+          ]
+        },
+        {
+          "name": "Tariffs",
+          "links": [
+            {
+              "path": "/site/family",
+              "text": "For family"
+            },
+            {
+              "path": "/site/forme",
+              "text": "For me"
+            },
+            {
+              "path": "/site/gift",
+              "text": "Gift"
+            }
+          ]
+        },
+        {
+          "name": "Authorization",
+          "links": [
+            {
+              "path": "/site/signin",
+              "text": "Sign In"
+            },
+            {
+              "path": "/site/signup",
+              "text": "Sign Up"
+            }
+          ]
+        }
+      ]
+    },
+    "Download": {
+      "HeaderTitle": "SoundWave",
+      "HeaderText": "Listen to music for free with your favorite artists",
+      "ContentTitle": "Download music to any of your devices",
+      "ContentLink": "Download"
+    },
+    "Help":{
+      "HelpItems": [
+        {
+            "question": "What to do if the app freezes or crashes?",
+            "answer": "Try restarting the app. If the problem persists, update the app to the latest version. If the problem still exists, contact our support service.",
+            "text": true
+        },
+        {
+            "question": "How can I recover my password if I forgot it?",
+            "answer": "If you have forgotten your password, you can recover it by clicking on the 'Forgot password?' link on the login page.",
+            "text": false
+        },
+        {
+            "question": "Can I use the app on multiple devices at the same time?",
+            "answer": "Yes, you can use your account on multiple devices, but music playback will only be available on one device at a time.",
+            "text": false
+        },
+        {
+            "question": "How can I contact customer support?",
+            "answer": "You can contact customer support by sending an email to supportSoundWave@gmail.com or through the 'Help and Support' section in the app.",
+            "text": false
+        }
+      ]
+    },
+    "Tarifs": {
+      "HeaderTitle": "Get music at a favorable tariff",
+      "HeaderText": "Listen to music with no limits and no ads.",
+      "ContentTitle": "Listen to your favorite music without limits with our plans",
+      "ContentButton": "Get Premium",
+      "ContentText": [
+        "Subscribe to our premium plan and get access to a huge library of tracks, albums and playlists in high quality without ads. Enjoy uninterrupted music wherever you are.",
+        "The more you listen, the more benefits you get! Our plans offer not only unlimited access to music, but also exclusive features such as offline mode, personalized recommendations and the ability to create your own playlists.",
+        "Choose your perfect plan and enjoy music anytime, anywhere! Upgrade to premium and discover new music horizons now!"
+      ],
+      "Table": {
+        "ContentTitle": "Find out our tariffs and prices",
+        "ContentCellPlan": "Tariff plan ",
+        "ContentCellTarif": "Description",
+        "ContentCellPrice": "Price",
+        "ContentCellSales": "Sales",
+        "ContentTarifs": [
+          {
+            "name": "Personal Rate",
+            "duration": "4517 Washington Ave. Manchester, Kentucky 394...",
+            "price": "25000 UZS",
+            "sale": "No Sales"
+          },
+          {
+            "name": "Family rate",
+            "duration": "2118 Thornridge Cir. Syracuse, Connecticut 35624",
+            "price": "50000 UZS",
+            "sale": "10%"
+          },
+          {
+            "name": "Gift fare",
+            "duration": "1901 Thornridge Cir. Shiloh, Hawaii 81063",
+            "price": "24000 UZS",
+            "sale": "No Sales"
+          }
+        ]
+      }
+    }
+  }
+}

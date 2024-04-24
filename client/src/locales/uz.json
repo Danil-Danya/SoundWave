@@ -1,0 +1,151 @@
+{
+  "Site": {
+    "Navbar": {
+      "LogoText": "SoundWave",
+      "NavbarLanding": [
+        {
+          "path": "/site/download",
+          "text": "Yuklab oling"
+        },
+        {
+          "path": "/site/help",
+          "text": "Malumot"
+        },
+        {
+          "path": "/site/plans",
+          "text": "Tariflar"
+        }
+      ],
+      "LinksAuth": [
+        {
+          "path": "/signup",
+          "text": "Ro'yxatdan o'tish"
+        },
+        {
+          "path": "/signin",
+          "text": "Tizimga kirish"
+        }
+      ]
+    },
+    "Footer": {
+      "FooterLicense": "Litsenziya 2024-yilda tashkil etilgan SoundWave-ga berilgan.",
+      "FooterLinks": [
+        {
+          "name": "Kompaniya",
+          "links": [
+            {
+              "path": "/site/autors",
+              "text": "Mualliflar"
+            },
+            {
+              "path": "/site/services",
+              "text": "Yordam"
+            },
+            {
+              "path": "/site/policy",
+              "text": "Shartnoma"
+            }
+          ]
+        },
+        {
+          "name": "Tariflar",
+          "links": [
+            {
+              "path": "/site/family",
+              "text": "Oila uchun"
+            },
+            {
+              "path": "/site/forme",
+              "text": "O'zingiz uchun"
+            },
+            {
+              "path": "/site/gift",
+              "text": "Sovgʻa"
+            }
+          ]
+        },
+        {
+          "name": "Ruxsat",
+          "links": [
+            {
+              "path": "/site/signin",
+              "text": "Ro'yxatdan o'tish"
+            },
+            {
+              "path": "/site/signup",
+              "text": "Tizimga kirish"
+            }
+          ]
+        }
+      ]
+    },
+    "Download": {
+      "HeaderTitle": "SoundWave",
+      "HeaderText": "Sevimli san'atkorlaringiz bilan bepul musiqa tinglang",
+      "ContentTitle": "Har qanday qurilmangizga musiqa yuklab oling",
+      "ContentLink": "Yuklab oling"
+    },
+    "Help":{
+      "HelpItems": [
+        {
+            "question": "Dastur to'xtab qolgan yoki chiqib ketgan bo'lsa, nima qilish kerak?",
+            "answer": "Dasturni qayta ishga tushiring. Agar muammo davom etadigan bo'lsa, dasturni eng so'nggi versiyaga yangilang. Agar muammo hali ham mavjud bo'lsa, bizning yordam xizmatimiz bilan bog'laning.",
+            "text": true
+        },
+        {
+            "question": "Parolimni unutgan bo'lsam, uni qanday tiklay olaman?",
+            "answer": "Agar parolingizni unutgan bo'lsangiz, tizimga kirish sahifasidagi 'Parolni unutdingizmi?' havolasini bosib, uni tiklashingiz mumkin.",
+            "text": false
+        },
+        {
+            "question": "Dasturni bir vaqtning o'zida bir nechta qurilmalarda ishlatishim mumkinmi?",
+            "answer": "Ha, siz bir nechta qurilmalarda o'z hisobingizni ishlatishingiz mumkin, lekin musiqa ijrosi bir vaqtning o'zida faqat bitta qurilmada mavjud bo'ladi.",
+            "text": false
+        },
+        {
+            "question": "Qanday qilib mijozlar xizmati bilan bog'lanishim mumkin?",
+            "answer": "Siz mijozlar xizmati bilan bog'lanishingiz mumkin, supportSoundWave@gmail.com manziliga elektron pochta yuborish orqali yoki dasturdagi 'Yordam va qo'llab-quvvatlash' bo'limi orqali.",
+            "text": false
+        }
+    ]
+    },
+    "Tarifs": {
+      "HeaderTitle": "Muzikani foydali tarif asosida oling",
+      "HeaderText": "Musiqa cheklovlarsiz va reklamalar bilan tinglang.",
+      "ContentTitle": "Favqulodda musiqa cheklovlarsiz, bizning abonentlik rejimlarimiz bilan tinglayvering.",
+      "ContentButton": "Premiumga ulaning",
+      "ContentText": [
+        "Bizning premium rejimiga obuna bo’ling va kengayib borayotgan kutubxona to’plamlarining, trek va albomlarning yuqori sifatli katalogiga bepul kirishni qo’lga kiriting. Reklamalar bilan aralashtirilmagan musiqani istalgan joyda tinglashdan zavqlaning.",
+        "Qancha tinglasangiz shuncha afzalliklarga ega bo’lasiz! Bizning abonamentlarimiz musiqa katalogidan cheklovsiz foydalanishni ta’minlaydi, lekin shuningdek, eksklyuziv imkoniyatlar, jumladan, o’zini-o’zi tanlash rejimi, shaxsiy rekomendatsiyalar va o’zingiz yaratish imkoniyati bilan ta’minlab beradi.",
+        "Ideal abonentni tanlang va istagan vaqtda istagan joyda musiqa tinglang! Premiumga o’ting va hoziroq yangi musiqaviy gorizontlarga ega boqing!"
+      ],
+      "Table": {
+        "ContentTitle": "Bizning abonentlar va narxlar haqida ma’lumot oling",
+        "ContentCellPlan": "Tariflar rejasi",
+        "ContentCellTarif": "Tarif rejasining tavsifi",
+        "ContentCellPrice": "Narxi",
+        "ContentCellSales": "Chegirma",
+        "ContentTarifs": [
+          {
+            "name": "Shaxsiy",
+            "duration": "4517 Washington Ave. Manchester, Kentucky 394...",
+            "price": "25000 UZS",
+            "sale": "Aktsiya yok"
+          },
+          {
+            "name": "Oila uchun  ",
+            "duration": "2118 Thornridge Cir. Syracuse, Connecticut 35624",
+            "price": "50000 UZS",
+            "sale": "10%"
+          },
+          {
+            "name": "Sovgʻa",
+            "duration": "1901 Thornridge Cir. Shiloh, Hawaii 81063",
+            "price": "24000 UZS",
+            "sale": "Aktsiya yok"
+          }
+        ]
+      }
+    }
+  }
+}
