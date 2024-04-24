@@ -47,6 +47,22 @@ const router = createRouter({
         layout: 'landing'
       }
     },
+    {
+      path: '/login/:lang',
+      name: 'login',
+      component: () => import('../views/Login.vue'),
+      meta: {
+        layout: 'login'
+      }
+    },
+    {
+      path: '/registration/:lang',
+      name: 'registration',
+      component: () => import('../views/Registration.vue'),
+      meta: {
+        layout: 'login'
+      }
+    }
   ]
 })
 
