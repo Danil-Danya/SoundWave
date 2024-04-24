@@ -1,6 +1,9 @@
 import express from 'express';
 import path from 'path';
 
+import dotenv from 'dotenv';
+dotenv.config();
+
 import router from './server/router/router.js';
 import { fileURLToPath } from 'url';
 
@@ -10,6 +13,7 @@ const __dirname = path.dirname(__filename);
 const app = new express();
 
 const PORT = process.env.PORT || 3000;
+console.log(process.env.PORT);
 
 app.use(express.json()); 
 app.use(express.urlencoded({ extended: true }));

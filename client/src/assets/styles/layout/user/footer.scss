@@ -1,0 +1,88 @@
+.footer {
+    &__app {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 999999;
+
+        &-container {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__content {
+        max-width: 1730px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    &__switcher {
+        &-border {
+            background: $white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            cursor: pointer;
+        }
+    }
+
+    &__icon {
+       cursor: pointer; 
+    }
+
+    &__img {
+        width: 65px;
+        height: 65px;
+    }
+
+    &__player {
+        &-buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        &-switcher {
+            display: flex;
+            gap: 10px;
+        }
+    }
+
+    &__settings {
+        &-icons {
+            cursor: pointer;
+            
+            &-container {
+                display: flex;
+                gap: 5px;
+            }
+        }
+    }
+
+    &__author {
+        display: flex;
+        gap: 15px;
+
+        &-initial {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        &-song {
+            font-size: 16px;
+            font-family: $mm;
+        }
+
+        &-name {
+            font-size: 14px;
+            font-family: $mr;
+        }
+    }
+}

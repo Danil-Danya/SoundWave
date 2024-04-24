@@ -16,11 +16,11 @@ const router = createRouter({
       }
     }, 
     {
-      path: '/test',
-      name: 'test',
-      component: () => import('../views/Test.vue'),
+      path: '/app/home',
+      name: 'home',
+      component: () => import('../views/Home.vue'),
       meta: {
-        layout: 'user-layout'
+        layout: 'user'
       }
     },
     {
