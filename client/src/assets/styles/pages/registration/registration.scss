@@ -21,15 +21,13 @@
 
         &-src {
             position: absolute;
-            top: -110px;
-            left: -23.5%;
-            max-width: 500px;
-            width: 100vh;
-            overflow: hidden;
+            top: -130px;
+            left: -100px;
+            z-index: -1;
         }
     }
 
-    &__botton {
+    &__button {
         font-family: $mr;
         font-size: 20px;
         text-align: center;
@@ -43,10 +41,10 @@
             border: none;
             background-color: $purple;
             cursor: pointer;
-
+            transition: background 0.3s ease-in-out;
+            
             &:hover {
-                transform: scale(1.05);
-                transition: transform 0.5s ease-in-out;
+                background-color: $lightPurple;
             }
 
         }
@@ -99,7 +97,7 @@
             margin-bottom: 10px;
             border-radius: 5px;
             border: 1px solid $white;
-            padding: 8px 0;
+            padding: 8px 15px;
             width: 100%;
             background-color: transparent;
         }
@@ -109,10 +107,14 @@
             display: block;
         }
 
+        &-user {
+            margin-bottom: 10px;
+            display: block;
+        }
+
         &-email {
             margin-bottom: 10px;
             display: block;
         }
     }
-
 }

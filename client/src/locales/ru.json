@@ -18,11 +18,11 @@
         ],
         "LinksAuth": [
           {
-            "path": "/signup",
+            "path": "/registration",
             "text": "Регистрация"
           },
           {
-            "path": "/signin",
+            "path": "/login",
             "text": "Войти"
           }
         ]

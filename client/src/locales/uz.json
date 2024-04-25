@@ -18,11 +18,11 @@
       ],
       "LinksAuth": [
         {
-          "path": "/signup",
+          "path": "/registration",
           "text": "Ro'yxatdan o'tish"
         },
         {
-          "path": "/signin",
+          "path": "/login",
           "text": "Tizimga kirish"
         }
       ]
