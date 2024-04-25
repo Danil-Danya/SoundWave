@@ -51,20 +51,20 @@ li {
         align-items: center;
     }
 
+    &__message {
+        margin-bottom: 10px;
+        color: red;
+    }
+
     &__container {
-
-        overflow: hidden;
-
         display: flex;
         justify-content: center;
         flex-direction: column;
-        height: 100%;
-
-        margin: 10% auto;
-
-        max-width: 500px;
+        margin: 0 auto;
+        max-width: 600px;
         width: 100%;
-        height: 650px;
+        height: 750px;
+        overflow: hidden;
 
         background: $loginBg;
         border-radius: 40px;
@@ -75,6 +75,7 @@ li {
     }
 
     &__image {
+        display: none;
         position: absolute;
         top: calc(-200px / 2);
         left: calc(50% - (65px / 2));

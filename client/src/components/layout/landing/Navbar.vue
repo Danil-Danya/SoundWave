@@ -71,7 +71,14 @@ export default {
         const newLink = `${basePath}/${currentLang}`;
 
         link.path = newLink;
-     });
+      });
+
+      this.linksAuth.forEach(link => {
+        const basePath = link.path.replace(`/${currentLang}`, '');
+        const newLink = `${basePath}/${currentLang}`;
+
+        link.path = newLink;
+      });
     },
 
     getLocalList () {

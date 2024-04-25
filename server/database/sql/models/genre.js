@@ -14,5 +14,21 @@ const Genre = sequelize.define('Genre', {
         type: DataTypes.STRING,
         allowNull: false,
         unique: true
+    },
+
+    numberOfPlays: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        defaultValue: 0
+    },
+
+    numberOfSong: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        defaultValue: 0
     }
 })
+
+Genre.sync();
+
+export default Genre;

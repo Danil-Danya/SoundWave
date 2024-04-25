@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /404
+Disallow: /registration/ru
+Disallow: /registration/eng
+Disallow: /registration/uz
+Disallow: /login/ru
+Disallow: /login/eng
+Disallow: /login/uz
+Disallow: /admin

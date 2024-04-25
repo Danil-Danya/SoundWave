@@ -12,10 +12,10 @@ class Users {
     async createUser (req, res) {
         try {
             const { email, password, username } = req.body;
-            if (!email || !password || !username) return res.status(401).json({messge: 'you send empty data'});
+            if (!email || !password || !username) return res.status(401).json({message: 'You send empty data'});
     
             const candidate = await User.findOne({ where: { email }});
-            if (candidate) return res.status(505).json({ messge: 'this user has been added' });
+            if (candidate) return res.status(505).json({ message: 'This user has been added' });
     
             const hashPassword = bycrypt.hashSync(password, 10);
     
@@ -31,16 +31,16 @@ class Users {
     async initializationUser (req, res) {
         try {
             const { email, password } = req.body;
-            if (!email || !password) res.status(401).json({messge: 'you send empty data'});
+            if (!email || !password) res.status(401).json({ message: 'you send empty data', password, email });
 
             const user = await User.findOne({ where: { email }});
-            if (!user) return res.status(401).json({ messge: 'User not found' });
+            if (!user) return res.status(401).json({ message: 'User not found' });
 
             const decodeHashPassword = bycrypt.compareSync(password, user.password);
-            if (!decodeHashPassword) return res.status(401).json({ messge: 'You send wrong password' });
+            if (!decodeHashPassword) return res.status(401).json({ message: 'You send wrong password'});
 
             const webToken = generateJSONWebToken(user);
-            return res.status(200).json({webToken});
+            return res.status(200).json({ webToken });
         }
         catch (error) {
             console.log(error);

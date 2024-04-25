@@ -47,7 +47,8 @@ const Song = sequelize.define('Song', {
 
     numberOfPlays: {
         type: DataTypes.INTEGER,
-        allowNull: false
+        allowNull: false,
+        defaultValue: 0
     }
 });
 
